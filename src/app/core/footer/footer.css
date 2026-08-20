@@ -1,0 +1,29 @@
+.footer {
+    background: linear-gradient(180deg, #1a0a2e 0%, #0a0e27 100%);
+    color: #00ff00;
+    text-align: center;
+    padding: 20px;
+    border-top: 4px solid #ff00ff;
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.5),
+                inset 0 0 20px rgba(0, 255, 0, 0.1);
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    margin-top: auto;
+  }
+  
+  .footer p {
+    margin: 5px 0;
+    text-shadow: 0 0 5px #00ff00;
+  }
+  
+  .glitch-text {
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff;
+    font-weight: bold;
+    animation: glitch-blink 2s infinite;
+  }
+  
+  @keyframes glitch-blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+  }

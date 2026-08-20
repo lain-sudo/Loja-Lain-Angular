@@ -1,0 +1,23 @@
+:host {
+    display: block;
+    background-color: #0a0e27;
+    color: #00ff00;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container {
+    flex: 1;
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    font-family: 'Courier New', monospace;
+  }
+  
+  .container h2 {
+    text-shadow: 0 0 10px #ff00ff;
+    font-size: 20px;
+  }
