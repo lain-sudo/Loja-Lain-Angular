@@ -1,0 +1,11 @@
+<section class="product-list-container">
+    <h2 class="section-title">CATÁLOGO DE PRODUTOS</h2>
+    <p class="section-subtitle">The Wired awaits...</p>
+    
+    <div class="products-grid">
+      <app-card-produto 
+        *ngFor="let produto of produtos" 
+        [produto]="produto">
+      </app-card-produto>
+    </div>
+  </section>

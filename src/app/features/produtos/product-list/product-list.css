@@ -1,0 +1,50 @@
+.product-list-container {
+    width: 100%;
+    padding: 40px 20px;
+    background: linear-gradient(180deg, #0a0e27 0%, #1a0a2e 100%);
+  }
+  
+  .section-title {
+    text-align: center;
+    color: #ff00ff;
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 20px #ff00ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Courier New', monospace;
+  }
+  
+  .section-subtitle {
+    text-align: center;
+    color: #00ff00;
+    font-size: 14px;
+    margin-bottom: 40px;
+    text-shadow: 0 0 10px #00ff00;
+    font-family: 'Courier New', monospace;
+    animation: blink-subtitle 2s infinite;
+  }
+  
+  @keyframes blink-subtitle {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+  }
+  
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 768px) {
+    .products-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    
+    .section-title {
+      font-size: 24px;
+    }
+  }

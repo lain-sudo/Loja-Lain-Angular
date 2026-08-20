@@ -1,0 +1,23 @@
+<div class="card-produto" [class.promo]="produto().promo">
+    <div class="card-image">
+      <img [src]="produto().imageUrl" [alt]="produto().nome" />
+      <div class="promo-badge" *ngIf="produto().promo">
+        PROMO
+      </div>
+    </div>
+    
+    <div class="card-content">
+      <h3 class="produto-nome">{{ produto().nome }}</h3>
+      <p class="produto-descricao">{{ produto().descricao }}</p>
+      
+      <div class="produto-preco">
+        <span class="preco">R$ {{ produto().preco | number: '1.2-2' }}</span>
+      </div>
+      
+      <button class="btn-adicionar" (click)="adicionarAoCarrinho()">
+        ADICIONAR AO CARRINHO
+      </button>
+      
+      <button class="btn-detalhes">VER DETALHES</button>
+    </div>
+  </div>

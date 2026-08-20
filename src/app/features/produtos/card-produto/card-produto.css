@@ -1,0 +1,143 @@
+.card-produto {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    border: 2px solid #00ff00;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.3),
+                inset 0 0 15px rgba(255, 0, 255, 0.1);
+    font-family: 'Courier New', monospace;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .card-produto:hover {
+    border-color: #ff00ff;
+    box-shadow: 0 0 25px rgba(255, 0, 255, 0.6),
+                0 0 40px rgba(0, 255, 0, 0.4),
+                inset 0 0 20px rgba(0, 255, 0, 0.2);
+    transform: translateY(-8px);
+  }
+  
+  .card-produto.promo {
+    border-color: #ff00ff;
+    background: linear-gradient(135deg, #2e0a1a 0%, #3e1621 100%);
+  }
+  
+  .card-image {
+    position: relative;
+    overflow: hidden;
+    height: 280px;
+    background: #0a0e27;
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.95) contrast(1.1);
+    transition: all 0.4s ease;
+  }
+  
+  .card-produto:hover .card-image img {
+    filter: brightness(1.1) contrast(1.2);
+    transform: scale(1.05);
+  }
+  
+  .promo-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff00ff;
+    color: #0a0e27;
+    padding: 8px 12px;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 4px;
+    text-shadow: 0 0 5px #ff00ff;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.8);
+    animation: pulse-promo 2s infinite;
+  }
+  
+  @keyframes pulse-promo {
+    0%, 100% { box-shadow: 0 0 15px rgba(255, 0, 255, 0.8); }
+    50% { box-shadow: 0 0 25px rgba(255, 0, 255, 1); }
+  }
+  
+  .card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  
+  .produto-nome {
+    color: #00ff00;
+    font-size: 18px;
+    margin-bottom: 8px;
+    text-shadow: 0 0 5px #00ff00;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .produto-descricao {
+    color: #a0a0a0;
+    font-size: 13px;
+    margin-bottom: 15px;
+    flex-grow: 1;
+    line-height: 1.4;
+  }
+  
+  .produto-preco {
+    margin-bottom: 15px;
+  }
+  
+  .preco {
+    color: #ff00ff;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #ff00ff;
+    display: block;
+  }
+  
+  .btn-adicionar,
+  .btn-detalhes {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    margin-bottom: 8px;
+    border-radius: 4px;
+  }
+  
+  .btn-adicionar {
+    background: #00ff00;
+    color: #0a0e27;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+  }
+  
+  .btn-adicionar:hover {
+    background: #00dd00;
+    box-shadow: 0 0 25px rgba(0, 255, 0, 0.8);
+    transform: scale(1.05);
+  }
+  
+  .btn-detalhes {
+    background: transparent;
+    color: #00ff00;
+    border: 2px solid #00ff00;
+    box-shadow: inset 0 0 10px rgba(0, 255, 0, 0.2);
+  }
+  
+  .btn-detalhes:hover {
+    background: rgba(0, 255, 0, 0.1);
+    box-shadow: inset 0 0 15px rgba(0, 255, 0, 0.4),
+                0 0 15px rgba(0, 255, 0, 0.5);
+    color: #ff00ff;
+    border-color: #ff00ff;
+  }
