@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # LojaLainAngular
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.21.
@@ -57,3 +58,7 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+=======
+# Loja-Lain-Angular
+Aqui eu estou aprendendo a usar o framework angular do typescript, criando uma loja funcional
+>>>>>>> 493cf0fc09f66df9bccc477bf0c2303d92ec9942
