@@ -19,6 +19,14 @@ export class ProductList {
       descricao: 'Computador portátil vermelho. Acesse The Wired em qualquer lugar. Conecte-se à realidade virtual.',
       imageUrl: 'images/navi-lain.png',
       promo: false
+    },
+    {
+      id: 2,
+      nome: 'Hyprlain Config',
+      preco: 49.90,
+      descricao: 'Configuração completa do Hyprland com tema Lain para Arch Linux. Wayland compositor otimizado com estética cyberpunk.',
+      imageUrl: 'images/hyprlain-config-arch.png',
+      promo: true
     }
   ];
 }
