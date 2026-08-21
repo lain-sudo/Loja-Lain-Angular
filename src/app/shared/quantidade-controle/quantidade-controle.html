@@ -1,0 +1,18 @@
+<div class="quantidade-container">
+    <button class="btn-controle" (click)="decrementar()" aria-label="Diminuir">
+      −
+    </button>
+    
+    <input 
+      type="number" 
+      class="input-quantidade"
+      [value]="quantidade()"
+      (change)="alterarQuantidade($any($event.target).valueAsNumber)"
+      min="1"
+      aria-label="Quantidade"
+    />
+    
+    <button class="btn-controle" (click)="incrementar()" aria-label="Aumentar">
+      +
+    </button>
+  </div>

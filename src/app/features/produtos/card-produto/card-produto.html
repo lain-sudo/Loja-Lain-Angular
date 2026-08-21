@@ -11,7 +11,13 @@
       <p class="produto-descricao">{{ produto().descricao }}</p>
       
       <div class="produto-preco">
-        <span class="preco">R$ {{ produto().preco | number: '1.2-2' }}</span>
+        <span class="preco-unitario">R$ {{ produto().preco | number: '1.2-2' }} un.</span>
+        <span class="preco-total">Total: R$ {{ precoTotal | number: '1.2-2' }}</span>
+      </div>
+  
+      <div class="quantidade-section">
+        <label class="label-quantidade">Quantidade:</label>
+        <app-quantidade-controle [(quantidade)]="quantidade"></app-quantidade-controle>
       </div>
       
       <button class="btn-adicionar" (click)="adicionarAoCarrinho()">
